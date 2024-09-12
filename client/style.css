@@ -1,0 +1,288 @@
+*{
+    background:#1b1b2b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color : white;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    #app-view {
+        width : 80%;
+    }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    #app-view {
+           width : 90%;
+    }
+}   
+@media screen and (max-width: 767px) {
+    #app-view {
+        width : 100%;
+    }       
+}
+    
+
+
+#app-menu{
+    list-style: none;
+    color : white;
+    text-align:center;
+    justify-content: center;
+}
+
+
+#app-menu li{
+    display : inline-block;
+}
+
+.menu-item a{
+    display : inline-block;
+    color:#ffffff;
+    background:rgb(0, 0, 0);
+    padding:10px 20px;
+    font-size:25px;
+    text-decoration:none;
+    letter-spacing:1px;
+    text-transform:uppercase;
+}
+
+.menu-item a{
+    color:#ffffff;
+    text-decoration:none;
+    transition-duration: 0.1s;
+    border-radius: 0.5rem;
+}
+
+.menu-item:hover a{
+  border: none;
+  background:rgba(0, 0, 0, 0.4);
+  background:#fff;
+  color : black;
+  transition-duration: 0.1s;
+  border-radius: 0.5rem
+}
+
+img{
+    display: flex;
+    max-width: 50%;
+    max-height: 50%;
+}
+.content{
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.room-list {    
+    list-style: none;
+    text-align: center;
+    border-style: solid;
+    border-radius : 20px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+
+    li{
+        display : inline-flexbox;
+        align-items: center;
+        text-align: center;
+    }
+
+    a:hover {
+        background: rgb(12, 12, 51);
+        transition-duration: 0.1s; 
+    }
+
+    li a{
+        display : inline-block;
+        color:#ffffff;
+        background:rgb(0, 0, 0);
+        padding:10px 20px;
+        font-size:25px;
+        text-decoration:none;
+        letter-spacing:2px;
+        width : 60%;
+        margin : 5px auto;
+        border-radius: 0.5rem;
+        transition-duration: 0.1s;
+        align-items: center;
+    }
+}
+
+.page-control{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-style: solid;
+    border-radius : 10px;
+    width: 30%;
+    margin:10px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+button {
+    border-style: solid;
+    border-radius : 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition-duration: 0.1s;
+} 
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition-duration: 0.1s;
+}
+
+
+.profile-form {
+    display : inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.form-field {
+    display : inline-flexbox;
+    text-align: center;
+}
+
+
+.room-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 20px;   
+}
+
+.message-list {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    width: 40%;
+    margin: 20px auto;
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.message {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    .message-text {
+        word-break:break-all;
+        text-align: left;
+        color: #ffffff;
+        background: rgb(57, 107, 45);
+        padding: 10px 15px;
+        text-decoration: none;
+        margin: 5px;
+        margin-right:auto;
+        border-radius: 18px 18px 18px 1px;
+        font-size: 15px;
+    }
+}
+
+.message.my-message {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    padding-left: 10%;
+
+
+    .message-text {
+        word-break:break-all;
+        
+        text-align: left;
+        color: #dbdbdb;
+        background: rgb(53, 45, 124);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right : 10px;
+        margin-left : auto;
+        border-radius: 18px 18px 1px 18px;
+        font-size: 15px;
+        text-wrap :pretty;
+    }
+}
+
+.message-user {
+    font-size: 12px;
+}
+
+
+textarea{
+    border-style: solid;
+    border-radius : 10px;
+    width: 30%;
+    margin:10px 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.adventure-buttons {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Adjust the gap size to control spacing between buttons */
+    margin: 20px 0; /* Adds some space above and below the button container */
+}
+
+.adventure-buttons button {
+    width: auto;
+    height: auto;
+    padding: 10px 20px; /* Adjust padding to control the button size */
+    background-color: #4e4e50; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition on hover */
+}
+
+.adventure-buttons button:hover {
+    background-color: #68686a; /* Button background color on hover */
+}
+
+
+#login-form {
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    text-align: center;
+}
+
+#login-form input {
+    width: auto;
+    height: auto;
+    margin: 15px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+#login-form button {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
